@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter - Free Online Character & Word Count Tool</title>
+    <meta name="description" content="Free online character counter tool that counts characters, words, sentences, and paragraphs in real-time. Perfect for writers, students, and social media managers.">
+    <meta name="keywords" content="character counter, word counter, count characters, character count, word count, online tool, free tool">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .text-input-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .stats-section {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: vertical;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        .stat {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .stat:last-child {
+            border-bottom: none;
+        }
+        
+        .stat-label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .stat-value {
+            font-weight: 700;
+            color: #3498db;
+            font-size: 1.5rem;
+        }
+        
+        .ad-container {
+            background: #f1f2f6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .ad-container iframe {
+            border: none;
+            max-width: 100%;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .ad-container {
+                min-height: 50px;
+                padding: 10px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Character Counter Tool",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "description": "Free online tool to count characters, words, sentences, and paragraphs in real-time.",
+      "url": "https://example.com/character-counter",
+      "keywords": "character counter, word counter, count characters, online tool"
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Character Counter Tool</h1>
+            <p class="subtitle">Count characters, words, sentences, and paragraphs in real-time</p>
+            
+            <!-- Ads Placeholder (Header) -->
+            <div class="ad-container">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '48d248e09abb9d56de247d0326ff6f14',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//strolldownstairstelegram.com/48d248e09abb9d56de247d0326ff6f14/invoke.js"></script>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="text-input-section">
+                <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
+                
+                <!-- Ads Placeholder (Sidebar) -->
+                <div class="ad-container">
+                    <script async="async" data-cfasync="false" src="//strolldownstairstelegram.com/ea3a88c002750e675be2483c3386ecd5/invoke.js"></script>
+                    <div id="container-ea3a88c002750e675be2483c3386ecd5"></div>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat">
+                    <span class="stat-label">Characters (with spaces)</span>
+                    <span id="char-count" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Words</span>
+                    <span id="word-count" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Sentences</span>
+                    <span id="sentence-count" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Paragraphs</span>
+                    <span id="paragraph-count" class="stat-value">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ads Placeholder (Footer) -->
+        <div class="ad-container">
+            <script type='text/javascript' src='//strolldownstairstelegram.com/ac/a1/66/aca16625f7547657948d46a52accd25b.js'></script>
+            <script type='text/javascript' src='//strolldownstairstelegram.com/a8/d4/e0/a8d4e07ea6f36855d1204d3020f5d43e.js'></script>
+        </div>
+        
+        <footer>
+            <p>© 2023 Character Counter Tool. A free online utility for counting characters and words.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textInput = document.getElementById('text-input');
+            const charCount = document.getElementById('char-count');
+            const wordCount = document.getElementById('word-count');
+            const sentenceCount = document.getElementById('sentence-count');
+            const paragraphCount = document.getElementById('paragraph-count');
+            
+            textInput.addEventListener('input', updateCounts);
+            
+            function updateCounts() {
+                const text = textInput.value;
+                
+                // Character count (with spaces)
+                charCount.textContent = text.length;
+                
+                // Word count
+                const words = text.trim().split(/\s+/);
+                wordCount.textContent = text.trim() === '' ? 0 : words.length;
+                
+                // Sentence count
+                const sentences = text.split(/[.!?]+/).filter(s => s.length > 0);
+                sentenceCount.textContent = sentences.length;
+                
+                // Paragraph count
+                const paragraphs = text.split(/\n\s*\n/).filter(p => p.trim().length > 0);
+                paragraphCount.textContent = paragraphs.length || (text.trim() ? 1 : 0);
+            }
+            
+            // Initialize counts
+            updateCounts();
+        });
+    </script>
+</body>
+  </html>
